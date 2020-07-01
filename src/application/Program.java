@@ -15,6 +15,13 @@ public class Program {
 		list.add(new Product("Mouse", 50.0));
 		list.add(new Product("Tablet", 350.0));
 		list.add(new Product("HD Case", 80.0));
+		
+		list.removeIf(p -> p.getPrice() >= 100);
+		
+		for (Product p : list) {
+			System.out.println(p);	
+		}
+		
 	}
 
 }

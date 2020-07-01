@@ -1,6 +1,6 @@
 package entities;
 
-import java.text.Format;
+
 
 public class Product {
 	
@@ -30,7 +30,7 @@ public class Product {
 
 	@Override
 	public String toString() {
-		return name + ", " + String.format("%2.f" ,price);
+		return name + ", " + String.format("%.2f" , price);
 	}
 	
 }
